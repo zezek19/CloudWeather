@@ -127,7 +127,10 @@ function getData(url) {
 buscador = () => {
   nombrePais = inputPais.value;
 
-  if (nombrePais.length == 0) {
+  // VERIFICAMOS SI HAY ESPACIOS EN BLANCO
+  let espacio = /^\s*$/.test(nombrePais)
+
+  if (nombrePais.length == 0 || espacio ) {
     Swal.fire({
       title: "Error!",
       text: "Ingresa una ciudad",
