@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background: rgb(36,63,71);
+    background: linear-gradient(0deg, rgba(36,63,71,1) 0%, rgba(42,185,191,1) 88%);
+    height: 100vh;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: rgb(19, 79, 136);
+}
+
+
+header {
+  height: 60px;
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba(41, 65, 173, 0.37);
+}
+
+.container__header{
+    margin: auto;
+    max-width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container__logo{
+    display: flex;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color:  rgb(19, 79, 136);
+}
+
+.logo{
+    width: 90px;
+    margin-top: 5px;
+    margin-right: -15px;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 32px;
+}
+
+
+.container__buscador{
+    margin-left: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__buscador input {
+    width: 35vw;
+    height: 35px;
+    padding: 10px;
+    margin-right: -3rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-top-left-radius: 25px ;
+    border-bottom-left-radius: 25px ;
+}
+
+
+
+.container__buscador button {
+    height: 35px;
+    width: 70px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    border-top-right-radius: 25px ;
+    border-bottom-right-radius: 25px ;
+}
+
+.iconSearch{
+    margin-top: 5px;
+    height: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.main__container{
+    height: 75vh;
+    display: grid;
+    grid-template-areas: 
+    "temperatura max__temp min__temp"
+    "temperatura info info";
+    grid-template-columns: 50% auto auto;
+    grid-template-rows: 35% 75%;
+
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 2.0em 0;
+    gap: 2em;
+}
+
+
+
+.temperatura{
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba(41, 65, 173, 0.37);
+    border-radius: 10px;
+    grid-area: temperatura;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#ubicacion{
+    font-size: 2.5rem;
+    color:  rgba(39, 104, 165, 1);
+}
+
+
+.icon{
+    width: 40%;
+}
+
+#iconoAnimado {
+    width: 100% ;
+  }
+
+#temperaturaValor{
+    font-size: 3rem;
+    color:  rgb(19, 79, 136);
+}
+
+#temperaturaDescripcion{
+    font-size: 2rem;
+    color:  rgb(19, 79, 136);
+}
+
+.container__max{
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba(41, 65, 173, 0.37);
+    border-radius: 10px;
+    grid-area: max__temp;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#maxTemp{
+    font-size: 3rem;
+}
+
+.container__min{
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba(41, 65, 173, 0.37);
+    border-radius: 10px;
+    grid-area: min__temp;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#minTemp{
+    font-size: 3rem;
+}
+
+.info{
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba(41, 65, 173, 0.37);
+    border-radius: 10px;
+    grid-area: info;
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.info h2{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+
+
+

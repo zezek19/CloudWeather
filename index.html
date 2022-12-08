@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS-->
+    <link rel="stylesheet" href="./stlyes.css" />
+    <title>Cloud Weather</title>
+  </head>
+  <body>
+    <header>
+      <div class="container__header">
+        <div class="container__logo">
+          <a href="./index.html">
+            <img class="logo" src="./images/logoclima.png" alt="" >
+          </a>
+          <a href="./index.html">
+            <h1 class="titulo">Cloud Weather</h1>
+          </a>
+
+
+        </div>
+        <div class="container__buscador">
+          <input id="inputPais" type="text" placeholder="Busca la ciudad..." />
+          <button id="buscador" type="button" onclick="buscador()">
+            <img class="iconSearch" src="./images/icons8-search.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+      <section class="main__container">
+        <section class="temperatura">
+          <div class="ubi">
+            <h2 id="ubicacion"></h2>
+          </div>
+
+          <div class="icon">
+            <img id="iconoAnimado" src="" alt="" />
+          </div>
+
+          <div class="temperaturaValor">
+            <h2 id="temperaturaValor"></h2>
+          </div>
+
+          <div class="descripcion">
+            <h2 id="temperaturaDescripcion"></h2>
+          </div>
+        </section>
+
+        <section class="container__max">
+          <div class="max__number">
+            <h2 id="maxTemp"></h2>
+          </div>
+          <div>
+            <h2>MAX.</h2>
+          </div>
+        </section>
+
+        <section class="container__min">
+          <div class="min__number">
+            <h2 id="minTemp"></h2>
+          </div>
+          <div>
+            <h2>MIN.</h2>
+          </div>
+        </section>
+
+        <section class="info">
+          <div class="container__viento">
+            <h2 id="vientoVelocidad"></h2>
+          </div>
+          <div class="sensacion__termica">
+            <h2 id="sensacionTermica"></h2>
+          </div>
+          <div class="presion">
+            <h2 id="presion"></h2>
+          </div>
+        </section>
+
+      </section>
+
+
+    </main>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
